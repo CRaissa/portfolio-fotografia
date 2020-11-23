@@ -1,45 +1,73 @@
+import Link from 'next/link';
 import React from 'react'
 import Head from 'next/head'
+import Gallery from '../components/Gallery';
+import Layout from '../components/Layout';
+
+
+const images = [
+  '/portfolio/1.jpeg',
+  '/portfolio/2.jpeg'
+];
 
 const Home = () => (
-  <div>
-    <h1>Next.js on the [JAMstack](https://jamstack.org)</h1>
-
-    <h3>Hooray 🎉 - you've built this with <a href="https://nextjs.org">Next.js</a>!</h3>
-
+  <Layout>
+    <div className="cover">
+      <div className="hello">
+        <h1>Camila Raissa Fotografia</h1>
+        <Link href="/services">
+          <a className="view-more">Veja meu portfolio</a>
+        </Link>
+      </div>
+    </div>
+    <div className="latest-work">
+      <h2>Alguns trabalhos</h2>
+      <Gallery images={images} />
+      <div className="">
+        <Link href="/portfolio">
+          <a className="view-more">Veja mais</a>
+        </Link>
+      </div>
+    </div>
     <style jsx>{`
-      :global(html,body) {
-        margin: 0;
-        padding: 0;
-        height: 100%;
+      .cover {
+        position: relative;
+        min-height: 600px;
+        background: transparent url(/cover.jpeg) no-repeat center center;
+        background-size: cover;
       }
-
-      :global(body) {
-        font-size: calc(10px + 1vmin);
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-          'Droid Sans', 'Helvetica Neue', sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+      .hello {
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        background: #fff;
+        padding: 30px;
+      }
+      .hello h1 {
+        margin: 0 0 10px 0;
+      }
+      a.view-more {
+        text-transform: uppercase;
+        font-size: 16px;
+      }
+      .latest-work {
         text-align: center;
-        background-color: #282c34;
-        color: white;
+        padding: 30px 0;
+        margin-bottom: 60px;
       }
-
-      a {
-        color: pink;
-        text-decoration: none;
-      }
-
-      .content {
-        padding: 0 32px;
+      @media (max-width: 480px) {
+        .hello {
+          left: 30px;
+          right: 30px;
+          font-size: 18px;
+          padding: 20px;
+        }
+        h1 {
+          font-size: 28px;
+        }
       }
     `}</style>
-  </div>
-)
+  </Layout>
+);
 
-export default Home
+export default Home;
