@@ -14,7 +14,7 @@ const Gallery = ({ images }) => (
           flex-wrap: wrap;
           justify-content: space-between;
           margin-bottom: 50px;
-          max-width: 1240px;
+          max-width: 900px;
           margin: 0 auto;
         }
 
