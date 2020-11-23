@@ -6,7 +6,7 @@ const About = () => (
         <h1>Sobre</h1>
         <ul className="company-info">
             <li>
-                <span className="company">Camila Raissa Fotografia</span>
+                <span className="company">Camila Raissa da Silva</span>
             </li>
             <li>
                 <a href="mailto:hi@fi.studio">camila.raissa.jp@gmail.com</a>

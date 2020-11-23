@@ -3,7 +3,7 @@ import Gallery from '../components/Gallery';
 
 const Portfolio = () => {
   const images = [];
-  const imageCount = 2;
+  const imageCount = 10;
 
   for (let i = imageCount; i > 0; i--) {
     images.push(`/portfolio/${i}.jpeg`);

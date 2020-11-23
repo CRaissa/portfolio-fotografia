@@ -3,7 +3,7 @@ const Gallery = ({ images }) => (
       {images.map(image => {
         return (
           <div className="image" key={image}>
-            <img src={image} />
+            <img src={image} className="image_2" />
           </div>
         );
       })}
@@ -17,6 +17,18 @@ const Gallery = ({ images }) => (
           max-width: 1240px;
           margin: 0 auto;
         }
+
+        .gallery .image_2 {
+          opacity: 1;
+          display: block;
+          transition: .5s ease;
+          backface-visibility: hidden;
+        }
+
+        .gallery:hover .image_2 {
+          opacity: 0.8;
+        }
+
         .gallery .image {
           padding: 20px;
           width: 50%;

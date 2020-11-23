@@ -14,9 +14,9 @@ const Home = () => (
   <Layout>
     <div className="cover">
       <div className="hello">
-        <h1>Camila Raissa Fotografia</h1>
+        <h1>Camila R Silva</h1>
         <Link href="/services">
-          <a className="view-more">Veja meu portfolio</a>
+          <a className="view-more">portfolio</a>
         </Link>
       </div>
     </div>
@@ -32,8 +32,8 @@ const Home = () => (
     <style jsx>{`
       .cover {
         position: relative;
-        min-height: 600px;
-        background: transparent url(/cover.jpeg) no-repeat center center;
+        min-height: 400px;
+        background: transparent url(/cover.jpeg) no-repeat center center fixed;
         background-size: cover;
       }
       .hello {

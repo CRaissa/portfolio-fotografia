@@ -4,14 +4,15 @@ const Logo = () => (
   <div className="logo">
     <Link href="/">
       <a>
-        <img src="logo.png"/>
+        <img src="logo_2.png"/>
       </a>
     </Link>
 
     <style jsx>{`
       .logo img {
         display: block;
-        width: 120px;
+        width: 160px;
+        height: 70px;
       }
       @media (max-width: 600px) {
         .logo {
