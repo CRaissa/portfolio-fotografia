@@ -62,18 +62,19 @@ const Home = () => (
       a.view-more {
         text-transform: uppercase;
         font-size: 16px;
-        background: #eb6734;
+        color: #111;
+        font-weight: 300;
         text-decoration:none;
-        border:#eb6734 2px solid;
+        border-bottom: 1px solid #fa7369;
         padding:8px 10px;
-        border-radius:10px;
-        color:black;
-        margin-top:10px;
-        opacity: 0.7;
+        margin-bottom: 20px;
+        margin-top:20px;
+        opacity: 0.6;
       }
 
       a.view-more:hover {
         opacity: 1;
+        border-bottom: 3px solid #fa7369;
       }
 
       .latest-work {

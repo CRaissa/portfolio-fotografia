@@ -5,16 +5,17 @@ import Footer from '../components/Footer';
 const Layout = props => (
   <div className="site-wrapper">
     <Head>
+    
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
       <title>
         {props.title ? `${props.title} | ` : ''}
-        Camila Raissa
+        Camila R Silva
       </title>
       {props.description ? <meta name="description" content={props.description} /> : null}
     </Head>
 
     <Header />
-
     <div className="content-wrapper">{props.children}</div>
 
     <Footer />

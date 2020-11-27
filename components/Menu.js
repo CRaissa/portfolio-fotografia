@@ -9,7 +9,7 @@ const Menu = () => (
     </li>
     <li>
       <Link href="/services">
-        <a>Serviços</a>
+        <a>Loja</a>
       </Link>
     </li>
     <li>
@@ -39,7 +39,7 @@ const Menu = () => (
       }
       .menu li a:hover {
         padding-bottom: 3px;
-        border-bottom: 2px solid #ffe525;
+        border-bottom: 2px solid #fa7369;
       }
       @media (max-width: 600px) {
         .menu {
