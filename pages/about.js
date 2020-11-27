@@ -8,13 +8,19 @@ const About = () => (
             <li>
                 <span className="company">Camila Raissa da Silva</span>
             </li>
-            <li>
-                <a href="mailto:hi@fi.studio">camila.raissa.jp@gmail.com</a>
-            </li>
         </ul>
+
+        <div className="rounded-social-buttons">
+          <a className="social-button" href="camila.raissa.jp@gmail.com"><i className="fas fa-envelope"></i></a>
+          <a className="social-button twitter" href="https://www.twitter.com/raissa7" target="_blank"><i className="fab fa-twitter"></i></a>
+          <a className="social-button instagram" href="https://www.instagram.com/c.raissa" target="_blank"><i className="fab fa-instagram"></i></a>
+        </div>
+
+        
+
         <style jsx>{`
       .company-info {
-        margin: 0 0 100px 0;
+        margin: 0 0 0px 0;
         padding: 0;
         list-style: none;
         font-size: 18px;
@@ -23,6 +29,11 @@ const About = () => (
         font-weight: 700;
         font-size: 24px;
       }
+
+      .social-button {
+        padding-left: 25px;
+      }
+
       .about-text {
         color: #777;
         text-align: left;
@@ -40,7 +51,24 @@ const About = () => (
           display: block;
           margin: 0 auto 30px;
         }
+      
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        white-space: nowrap;
       }
+
+
+      
+      
+
+      
+    }
     `}</style>
     </Layout>
 );

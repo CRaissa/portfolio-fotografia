@@ -36,7 +36,7 @@ const Home = () => (
       .cover {
         position: relative;
         min-height: 400px;
-        background: transparent url(/cover_2.jpeg) no-repeat center center fixed;
+        background: transparent url(/cover_2.jpeg) no-repeat center center;
         background-size: cover;
       }
       .hello {
@@ -54,27 +54,30 @@ const Home = () => (
       }
 
       .hello p {
-        font-size: 20px;
+        font-size: 22px;
         color:white;
         text-align:center;
       }
 
       a.view-more {
-        text-transform: uppercase;
-        font-size: 16px;
-        color: #111;
-        font-weight: 300;
-        text-decoration:none;
-        border-bottom: 1px solid #fa7369;
-        padding:8px 10px;
-        margin-bottom: 20px;
-        margin-top:20px;
-        opacity: 0.6;
+        font-size: 20px;
+        display:inline-block;
+        padding:0.35em 1.2em;
+        border:0.1em solid #111;
+        margin:0 0.3em 0.3em 0;
+        border-radius:0.12em;
+        box-sizing: border-box;
+        text-decoration:none;
+        font-weight:300;
+        background-color:#111;
+        color:#FFFFFF;
+        text-align:center;
+        transition: all 0.2s;
       }
 
       a.view-more:hover {
-        opacity: 1;
-        border-bottom: 3px solid #fa7369;
+        background-color:#FFFFFF;
+        color:#111;
       }
 
       .latest-work {
@@ -93,6 +96,12 @@ const Home = () => (
           font-size: 28px;
         }
       }
+      @media all and (max-width:30em){
+         a.button1{
+          display:block;
+          margin:0.4em auto;
+         }
+        }
     `}</style>
   </Layout>
 );

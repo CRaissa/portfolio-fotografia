@@ -1,8 +1,8 @@
 const Footer = () => (
   <footer className="footer-class">
     <div className="rounded-social-buttons">
-    <a className="social-button twitter" href="https://www.twitter.com/raissa7" target="_blank"><i className="fab fa-twitter"></i></a>
-    <a className="social-button instagram" href="https://www.instagram.com/c.raissa" target="_blank"><i className="fab fa-instagram"></i></a>
+      <a className="social-button twitter" href="https://www.twitter.com/raissa7" target="_blank"><i className="fab fa-twitter"></i></a>
+      <a className="social-button instagram" href="https://www.instagram.com/c.raissa" target="_blank"><i className="fab fa-instagram"></i></a>
     <div className="copyright">© {new Date().getFullYear()} Camila R Silva.</div>
     </div>
 
